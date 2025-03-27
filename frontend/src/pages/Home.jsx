@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const CATEGORIES = ['All', 'Movie', 'Book'];
 const API_URL = import.meta.env.VITE_API_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export default function Home() {
   const [query, setQuery] = useState('');
@@ -33,7 +34,11 @@ export default function Home() {
   useEffect(() => {
     const fetchPopularTags = async () => {
       try {
-        const res = await axios.get(`${API_URL}/popular-tags`);
+        const res = await axios.get(`${API_URL}/popular-tags`,
+          { 
+            headers: {'X-API-Key': API_KEY}
+          } 
+        );
         setPopularTags(res.data);
       } catch (err) {
         console.error('Failed to load popular tags:', err);
@@ -47,7 +52,11 @@ export default function Home() {
 
     const timeout = setTimeout(async () => {
       try {
-        const res = await axios.get(`${API_URL}/search?q=${query}`);
+        const res = await axios.get(`${API_URL}/search?q=${query}`,
+          { 
+            headers: {'X-API-Key': API_KEY}
+          } 
+        );
         let filtered = res.data;
         if (category !== 'All') {
           filtered = filtered.filter((item) => item.category === category);

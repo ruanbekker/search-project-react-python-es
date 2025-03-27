@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const API_URL = import.meta.env.VITE_API_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export default function Details() {
   const { id } = useParams();
@@ -13,7 +14,11 @@ export default function Details() {
   useEffect(() => {
     const fetchMovie = async () => {
       try {
-        const res = await axios.get(`${API_URL}/details/${id}`);
+        const res = await axios.get(`${API_URL}/details/${id}`,
+          { 
+            headers: {'X-API-Key': API_KEY}
+          } 
+        );
         setMovie(res.data);
       } catch (err) {
         console.error(err);

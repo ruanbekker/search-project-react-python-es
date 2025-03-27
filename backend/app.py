@@ -1,11 +1,18 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, abort
 from flask_cors import CORS
 import requests
 import os
 import json
 
+ALLOWED_ORIGINS = ["http://192.168.0.70:3000"]
+
 app = Flask(__name__)
-CORS(app)
+
+CORS(app,
+    origins=ALLOWED_ORIGINS,
+    methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "X-API-Key", "Authorization"]
+)
 
 MEILI_HOST = os.getenv("MEILI_HOST", "http://localhost:7700")
 MEILI_API_KEY = os.getenv("MEILI_API_KEY", "")
@@ -13,6 +20,21 @@ MEILI_API_KEY = os.getenv("MEILI_API_KEY", "")
 HEADERS = {"Authorization": f"Bearer {MEILI_API_KEY}"}
 
 INDEX_NAME = "documents"
+
+API_KEY = os.getenv("API_KEY", "super-secret-key")
+
+@app.before_request
+def restrict_to_frontend():
+    if request.method == "OPTIONS":
+        # Allow preflight CORS requests without API key
+        return '', 200
+    
+    origin = request.headers.get("Origin")
+    api_key = request.headers.get("X-API-Key")
+
+    if origin not in ALLOWED_ORIGINS or api_key != API_KEY:
+        print(f"Blocked request: Origin={origin}, API_KEY={api_key}")
+        abort(403)
 
 @app.route("/search", methods=["GET"])
 def search():
@@ -89,5 +111,5 @@ def setup():
     return jsonify({"status": "index created", "details": res.json()})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
