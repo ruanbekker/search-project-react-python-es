@@ -29,6 +29,7 @@ services:
       context: ./frontend
       args:
         VITE_API_URL: http://192.168.0.70:5000
+        VITE_API_KEY: super-secret-key
     container_name: frontend
     ports:
       - "3000:3000"

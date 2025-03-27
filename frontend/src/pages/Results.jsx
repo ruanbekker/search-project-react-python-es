@@ -5,6 +5,7 @@ import { Loader2, AlertTriangle } from 'lucide-react';
 
 const RESULTS_PER_PAGE = 6;
 const API_URL = import.meta.env.VITE_API_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export default function Results() {
   const [results, setResults] = useState([]);
@@ -25,7 +26,11 @@ export default function Results() {
       setError('');
       setPage(1);
       try {
-        const res = await axios.get(`${API_URL}/search?q=${query}`);
+        const res = await axios.get(`${API_URL}/search?q=${query}`,
+          { 
+            headers: {'X-API-Key': API_KEY }
+          }
+        );
         let filtered = res.data;
         if (category && category !== 'All') {
           filtered = filtered.filter((item) => item.category === category);
