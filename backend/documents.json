@@ -1,0 +1,203 @@
+[
+    {
+        "id": 1,
+        "title": "The Matrix",
+        "category": "Movie",
+        "tags": ["sci-fi", "action", "cyberpunk", "philosophical", "thriller"],
+        "year": 1999,
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "image": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+        "description": "A hacker learns the shocking truth about reality and his role in the war against its controllers."
+    },
+    {
+        "id": 2,
+        "title": "Inception",
+        "category": "Movie",
+        "tags": ["sci-fi", "action", "mind-bending", "thriller", "heist"],
+        "year": 2010,
+        "director": "Christopher Nolan",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg",
+        "description": "A skilled thief enters people's dreams to steal secrets, but this time he's planting an idea."
+    },
+    {
+        "id": 3,
+        "title": "Interstellar",
+        "category": "Movie",
+        "tags": ["sci-fi", "drama", "space", "exploration", "time"],
+        "year": 2014,
+        "director": "Christopher Nolan",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    },
+    {
+        "id": 4,
+        "title": "The Dark Knight",
+        "category": "Movie",
+        "tags": ["action", "crime", "superhero", "thriller", "psychological"],
+        "year": 2008,
+        "director": "Christopher Nolan",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "description": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham."
+    },
+    {
+        "id": 5,
+        "title": "Tenet",
+        "category": "Movie",
+        "tags": ["action", "sci-fi", "thriller", "time", "spy"],
+        "year": 2020,
+        "director": "Christopher Nolan",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aCIFMriQh8rvhxpN1IWGgvH0Tlg.jpg",
+        "description": "A secret agent embarks on a dangerous, time-bending mission to prevent the start of World War III."
+    },
+    {
+        "id": 6,
+        "title": "The Lord of the Rings",
+        "category": "Book",
+        "tags": ["fantasy", "epic", "adventure", "classic", "high fantasy"],
+        "year": 1954,
+        "director": "J.R.R. Tolkien",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+        "description": "A young hobbit, Frodo Baggins, embarks on an epic journey to destroy the One Ring and save Middle-earth."
+    },
+    {
+        "id": 7,
+        "title": "Fight Club",
+        "category": "Book",
+        "tags": ["drama", "psychological", "cult", "violence", "surreal"],
+        "year": 1996,
+        "director": "Chuck Palahniuk",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "description": "An insomniac office worker forms an underground fight club that evolves into something much more."
+    },
+    {
+        "id": 8,
+        "title": "The Shawshank Redemption",
+        "category": "Movie",
+        "tags": ["drama", "prison", "redemption", "friendship", "classic"],
+        "year": 1994,
+        "director": "Frank Darabont",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+        "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+    },
+    {
+        "id": 9,
+        "title": "The Godfather",
+        "category": "Movie",
+        "tags": ["crime", "drama", "mafia", "classic", "family"],
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    },
+    {
+        "id": 10,
+        "title": "The Dark Knight Rises",
+        "category": "Movie",
+        "tags": ["action", "superhero", "thriller", "crime", "epic"],
+        "year": 2012,
+        "director": "Christopher Nolan",
+        "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+        "description": "Eight years after the events of The Dark Knight, Batman comes out of retirement to stop a new foe, Bane, from destroying Gotham City."
+    },
+    {
+        "id": 11,
+        "title": "Pulp Fiction",
+        "category": "Movie",
+        "tags": ["crime", "drama", "dark comedy", "nonlinear", "violent"],
+        "year": 1994,
+        "director": "Quentin Tarantino",
+        "image": "https://www.themoviedb.org/t/p/w1280/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+        "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+    },
+    {
+        "id": 12,
+        "title": "The Lion King",
+        "category": "Movie",
+        "tags": ["animation", "family", "adventure", "musical", "drama"],
+        "year": 1994,
+        "director": "Roger Allers, Rob Minkoff",
+        "image": "https://www.themoviedb.org/t/p/w1280/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+        "description": "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble."
+    },
+    {
+        "id": 13,
+        "title": "Forrest Gump",
+        "category": "Movie",
+        "tags": ["drama", "historical", "biography", "inspirational", "classic"],
+        "year": 1994,
+        "director": "Robert Zemeckis",
+        "image": "https://www.themoviedb.org/t/p/w1280/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an extraordinary life story."
+    },
+    {
+        "id": 14,
+        "title": "The Matrix Reloaded",
+        "category": "Movie",
+        "tags": ["sci-fi", "action", "cyberpunk", "philosophical", "thriller"],
+        "year": 2003,
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "image": "https://www.themoviedb.org/t/p/w1280/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg",
+        "description": "Neo and his allies race against time to stop a computer virus, and battle a program that is preventing them from reaching the last city of humanity."
+    },
+    {
+        "id": 15,
+        "title": "The Godfather: Part II",
+        "category": "Movie",
+        "tags": ["crime", "drama", "mafia", "family", "classic"],
+        "year": 1974,
+        "director": "Francis Ford Coppola",
+        "image": "https://www.themoviedb.org/t/p/w1280/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+        "description": "The early life and career of Vito Corleone in 1920s Sicily and 1930s New York is depicted, alongside the story of his son Michael's expansion of the family crime syndicate."
+    },
+    {
+        "id": 16,
+        "title": "Schindler's List",
+        "category": "Movie",
+        "tags": ["drama", "historical", "war", "holocaust", "biography"],
+        "year": 1993,
+        "director": "Steven Spielberg",
+        "image": "https://www.themoviedb.org/t/p/w1280/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+        "description": "In Nazi-occupied Poland during World War II, businessman Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis."
+    },
+    {
+        "id": 17,
+        "title": "The Prestige",
+        "category": "Movie",
+        "tags": ["drama", "mystery", "psychological", "thriller", "magic"],
+        "year": 2006,
+        "director": "Christopher Nolan",
+        "image": "https://www.themoviedb.org/t/p/w1280/bdN3gXuIZYaJP7ftKK2sU0nPtEA.jpg",
+        "description": "Two magicians engage in a bitter rivalry, with each trying to outdo the other with increasingly elaborate and dangerous tricks."
+    },
+    {
+        "id": 18,
+        "title": "Gladiator",
+        "category": "Movie",
+        "tags": ["action", "historical", "epic", "revenge", "drama"],
+        "year": 2000,
+        "director": "Ridley Scott",
+        "image": "https://www.themoviedb.org/t/p/w1280/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+        "description": "A betrayed Roman general sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery."
+    },
+    {
+        "id": 19,
+        "title": "The Departed",
+        "category": "Movie",
+        "tags": ["crime", "thriller", "mystery", "police", "gangster"],
+        "year": 2006,
+        "director": "Martin Scorsese",
+        "image": "https://www.themoviedb.org/t/p/w1280/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+        "description": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in Boston."
+    },
+    {
+        "id": 20,
+        "title": "Se7en",
+        "category": "Movie",
+        "tags": ["thriller", "crime", "psychological", "mystery", "serial killer"],
+        "year": 1995,
+        "director": "David Fincher",
+        "image": "https://www.themoviedb.org/t/p/w1280/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+        "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his modus operandi."
+    }
+]
+
